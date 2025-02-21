@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            font-size: 16px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Online Examination System</h2>
+    <form id="examForm" action="submit_exam.php" method="post">
+        <div class="question">
+            <label for="q1">1. What is the capital of France?</label><br>
+            <div class="options">
+                <input type="radio" name="q1" value="a" id="q1a">
+                <label for="q1a">a) Paris</label><br>
+                <input type="radio" name="q1" value="b" id="q1b">
+                <label for="q1b">b) London</label><br>
+                <input type="radio" name="q1" value="c" id="q1c">
+                <label for="q1c">c) Rome</label><br>
+                <input type="radio" name="q1" value="d" id="q1d">
+                <label for="q1d">d) Berlin</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="q2">2. Who developed the theory of relativity?</label><br>
+            <div class="options">
+                <input type="radio" name="q2" value="a" id="q2a">
+                <label for="q2a">a) Isaac Newton</label><br>
+                <input type="radio" name="q2" value="b" id="q2b">
+                <label for="q2b">b) Albert Einstein</label><br>
+                <input type="radio" name="q2" value="c" id="q2c">
+                <label for="q2c">c) Nikola Tesla</label><br>
+                <input type="radio" name="q2" value="d" id="q2d">
+                <label for="q2d">d) Galileo Galilei</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. What is the chemical symbol for water?</label><br>
+            <div class="options">
+                <input type="radio" name="q3" value="a" id="q3a">
+                <label for="q3a">a) H2O</label><br>
+                <input type="radio" name="q3" value="b" id="q3b">
+                <label for="q3b">b) O2</label><br>
+                <input type="radio" name="q3" value="c" id="q3c">
+                <label for="q3c">c) CO2</label><br>
+                <input type="radio" name="q3" value="d" id="q3d">
+                <label for="q3d">d) NaCl</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Exam</button>
+    </form>
+</div>
+
+</body>
+</html>
